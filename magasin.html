@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <!-- FONT SIZE -->
+     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <!-- LINK CSS -->
+     <link rel="stylesheet" href="magasin.css">
+     <!--title-->
+    <title>Document</title>
+</head>
+<body>
+    <div class="gruds">
+        <div class="head">
+            <h1>Gestion du matériel cosmétique</h1>
+        </div>
+        <div class="input">
+            <label class="help-block" for="">Nom</label>
+            <input type="text" placeholder="Nom" id="nom" >
+            <p id="error-1"></p>
+            <div class="marque">
+                <div class="container-select">
+                    <label class="help-block" for="">Marque</label>
+                    <form class="form-groupY" name="formd">
+                    <select class="input-selectd"  type="text" id="marque" >
+                        <option disabled selected value>Marque</option>
+                        <option>L'Oreal </option>
+                        <option>Covergirl</option>
+                        <option>Maybelline New York</option>
+                        <option>Nars</option>
+                        <option>Urban Decay</option>
+                        <option>Bobbi Brown</option>
+                        <option>Mac</option>
+                        <option>Estée Lauder</option>
+                        <option>ELF Cosmetics</option>
+                        <option>Lime Crime</option>
+                        <option>Melt Cosmetics</option>
+                    </select>
+                    <p id="error-5"></p>
+                    </form>
+                </div>
+                <div class="container-input">
+                    <label class="help-block" for="">Prix</label>
+                    <input type="number" id="prix" placeholder="prix">
+                    <p id="error-3"></p>
+                </div>
+            </div>
+            <div class="type-selectd">
+            <form class="form-groupY" name="formd">
+                <label class="help-block" for="">Type</label>
+                <select class="selectd"  type="text" id="AdType" name="ddleselection" >
+                    <option disabled selected value> déroulante</option>
+                    <option>hygiène et toilette</option>
+                    <option> soins esthétiques</option>
+                    <option>produits solaires</option>
+                    <option>beauté des mains et des pieds</option>
+                    <option>produits de maquillage</option>
+                    <option>entretien capillaires</option>
+                    <option>parfums</option>
+                </select>
+                <p id="error-2"></p>
+            </form>
+         </div>
+        </div>
+        <div class="promotion">
+            <div class="promotion-radio">
+                <label class="help-bl" for="">Promotion :</label>
+                <label class="help-radio" for="">Oui :</label>
+                <input name="radio"  value="oui"  type="radio" id="radio-promotion-1">
+                <label class="help-radio" for="">Non :</label>
+                <input name="radio" value="Non" type="radio" id="radio-promotion-2">
+            </div>
+            <p id="cate"></p>
+            <p id="error-6"></p>
+        </div>
+            <div class="date">
+                <div class="date-input">
+                    <label class="help-block" for="">Date</label>
+                    <input type="datetime-local" id="date" >
+                    <p id="error-4"></p>
+                </div>
+          
+                <button  id="submit">Create</button>
+                </div>
+            </div>
+        <div class="output">
+            <table>
+              
+                <tr>
+                    <th>Nom</th>
+                    <th>Marque</th>
+                    <th>Prix</th>
+                    <th>Type</th>
+                    <th>Date</th>
+                    <th>Promotion</th>
+                    <th>Updata</th>
+                    <th id="delete">Delete</th>
+                </tr>
+              
+                <tbody id="tbody">
+                </tbody>
+        </table>
+        </div>     
+    </div>
+<script src="magasin.js"></script>
+</body>
+</html>
